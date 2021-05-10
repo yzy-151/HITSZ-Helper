@@ -5,24 +5,33 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.VideoView
 
 class MainActivity : AppCompatActivity() {
+
+    //登录与注册的页面
+    var btnSignIn:Button?=null
+    var btnSignUp:Button?=null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val btnSignIn:Button=findViewById(R.id.btnSignIn)
-        val btnSignUp:Button=findViewById(R.id.btnSignUp)
+        btnSignIn=findViewById(R.id.btnSignIn)
+        btnSignUp=findViewById(R.id.btnSignUp)
 
-        btnSignUp.setOnClickListener {
+
+
+        btnSignUp?.setOnClickListener {//点击进入主界面maininterface
             val intent=Intent(this,MainInterface::class.java)
             startActivity(intent)
         }
 
-        btnSignIn.setOnClickListener {
-            val intent=Intent(Intent.ACTION_VIEW)
-            intent.data=Uri.parse("https://www.bilibili.com/video/BV1dU4y1W7qo?from=search&seid=11136257010251578185")
+        btnSignIn?.setOnClickListener {//点击进入一个播放视频的界面Videohaha
+           val intent=Intent(this,Vediohaha::class.java)
             startActivity(intent)
         }
     }
+
+
 }

@@ -1,4 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/demo1"
+            android:icon="@mipmap/dog1"
+            android:title="demo1"/>
+        <item
+            android:id="@+id/demo2"
+            android:icon="@mipmap/dog2"
+            android:title="demo2"/>
+        <item
+            android:id="@+id/demo3"
+            android:icon="@mipmap/dog3"
+            android:title="demo3"/>
+        <item
+            android:id="@+id/demo4"
+            android:icon="@mipmap/dog04"
+            android:title="demo4"/>
+        <item
+            android:id="@+id/demo6"
+            android:icon="@mipmap/dog5"
+            android:title="demo5"/>
+        <item
+            android:id="@+id/demo7"
+            android:icon="@mipmap/dog6"
+            android:title="demo6"/>
+        <item
+            android:id="@+id/demo8"
+            android:icon="@mipmap/dog7"
+            android:title="demo7"/>
+    </group>
 
 </menu>
