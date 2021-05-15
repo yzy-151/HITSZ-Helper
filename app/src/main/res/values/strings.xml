@@ -6,5 +6,24 @@
     <string name="请输入账号">请输入账号</string>
     <string name="请输入密码">请输入密码</string>
     <string name="用户名">用户名</string>
+    <string name="title_activity_negivation">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_tabbed">Tabbed</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="title_activity_tab">tab</string>
+    <string name="title_activity_yzy">yzy</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="最新动态">校园动态</string>
+    <string name="热门动态">热门动态</string>
 
 </resources>

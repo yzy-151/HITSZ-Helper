@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnSignIn?.setOnClickListener {//点击进入一个播放视频的界面Videohaha
-           val intent=Intent(this,Vediohaha::class.java)
+           val intent=Intent(this,MainInterface::class.java)
             startActivity(intent)
         }
     }

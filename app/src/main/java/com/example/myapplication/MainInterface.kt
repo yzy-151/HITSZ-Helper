@@ -1,12 +1,10 @@
 package com.example.myapplication
 
+import PersonalPageTure.Personalisation
 import android.content.Intent
-import android.graphics.drawable.Icon
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.Menu
 import android.view.MenuItem
-import android.widget.ImageView
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
@@ -34,11 +32,9 @@ class MainInterface : AppCompatActivity() {
         bottomNavigationMenu=findViewById(R.id.bottomAppBar2)
 
 
-        bottomNavigationMenu?.setOnNavigationItemSelectedListener {
 
-        }
         iconImage?.setOnClickListener{//点击头像进入第二界面
-            val intent=Intent(this,Personalisation::class.java)
+            val intent=Intent(this, Personalisation::class.java)
             startActivity(intent)
         }
 
@@ -49,7 +45,7 @@ class MainInterface : AppCompatActivity() {
         }
         navView?.setCheckedItem(R.id.demo1)
         navView?.setNavigationItemSelectedListener {//点击侧栏中的demo就会进入personalisation
-            val intent=Intent(this,Personalisation::class.java)
+            val intent=Intent(this, Personalisation::class.java)
             startActivity(intent)
             true
         }
@@ -61,11 +57,9 @@ class MainInterface : AppCompatActivity() {
         }
         return true
     }
-    override fun
 
 
 
 
-    }
 
-
+}

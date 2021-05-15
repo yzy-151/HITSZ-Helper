@@ -3,14 +3,14 @@
 
     <item
         android:id="@+id/friend"
-        android:icon="@drawable/wode1"
-        android:title="好友"></item>
+        android:icon="@drawable/shouye"
+        android:title="个人主页"></item>
     <item
         android:id="@+id/forum"
-        android:icon="@drawable/shouye"
-        android:title="讨论区"></item>
+        android:icon="@drawable/buju"
+        android:title="论坛"></item>
     <item
         android:id="@+id/function"
-        android:icon="@drawable/caidan"
-        android:title="功能区"></item>
+        android:icon="@drawable/huodong"
+        android:title="校园动态"></item>
 </menu>

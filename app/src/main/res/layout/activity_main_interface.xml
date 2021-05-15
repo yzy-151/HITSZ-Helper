@@ -17,21 +17,34 @@
           android:orientation="vertical"
           android:layout_width="match_parent"
           android:layout_height="match_parent">
+
           <androidx.viewpager.widget.ViewPager
+              android:id="@+id/viewPager"
               android:layout_width="match_parent"
               android:layout_height="0dp"
-              android:layout_weight="1"
-              android:id="@+id/viewPager">
+              android:layout_weight="1">
+
+              <ImageView
+                  android:id="@+id/imageView5"
+                  android:layout_width="60dp"
+                  android:layout_height="60dp"
+                  app:srcCompat="@android:drawable/dark_header" />
           </androidx.viewpager.widget.ViewPager>
 
-              <com.google.android.material.bottomnavigation.BottomNavigationView
-                  android:id="@+id/bottomAppBar2"
-                  android:layout_width="match_parent"
-                  android:layout_height="wrap_content"
-                  android:layout_gravity="bottom"
-                  app:menu="@menu/nav_bottom_menu"
-                  android:background="#00ffff"
-                  tools:ignore="BottomAppBar" />
+          <com.google.android.material.bottomnavigation.BottomNavigationView
+              android:id="@+id/bottomAppBar2"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_gravity="bottom"
+              android:background="#00ffff"
+              app:menu="@menu/nav_bottom_menu"
+              tools:ignore="BottomAppBar" />
+
+          <ImageView
+              android:id="@+id/imageView3"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              app:srcCompat="@android:drawable/divider_horizontal_bright" />
 
 
       </LinearLayout>

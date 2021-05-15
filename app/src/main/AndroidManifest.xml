@@ -9,7 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
-        <activity android:name=".Personalisation"></activity>
+        <activity
+            android:name="schoolLifetrue.yzy"
+            android:label="@string/title_activity_yzy"
+            android:theme="@style/Theme.MyApplication.NoActionBar">
+
+        </activity>
+
+        <activity
+            android:name="SomethingUseless.negivation"
+            android:label="@string/title_activity_negivation" />
+
+        <activity android:name="PersonalPageTure.Personalisation" />
         <activity
             android:name=".WelcomeActivity"
             android:theme="@style/AppTheme.FullScreen">
@@ -19,9 +30,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Vediohaha" />
+        <activity android:name="SomethingUseless.Vediohaha" />
         <activity android:name=".MainInterface" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
