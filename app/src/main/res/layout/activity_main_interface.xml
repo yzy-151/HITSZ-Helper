@@ -24,11 +24,7 @@
               android:layout_height="0dp"
               android:layout_weight="1">
 
-              <ImageView
-                  android:id="@+id/imageView5"
-                  android:layout_width="60dp"
-                  android:layout_height="60dp"
-                  app:srcCompat="@android:drawable/dark_header" />
+
           </androidx.viewpager.widget.ViewPager>
 
           <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -38,7 +34,36 @@
               android:layout_gravity="bottom"
               android:background="#00ffff"
               app:menu="@menu/nav_bottom_menu"
-              tools:ignore="BottomAppBar" />
+              tools:ignore="BottomAppBar">
+
+              <Button
+                  android:id="@+id/btnPersonalPage"
+                  android:layout_width="17dp"
+                  android:layout_height="60dp"
+                  android:layout_marginLeft="20dp"
+                  android:background="#00ffff"
+                  android:text="PersonalPage"
+                  app:backgroundTint="#00ffff" />
+
+              <Button
+                  android:id="@+id/btnSchoolTerm"
+                  android:layout_width="17dp"
+                  android:layout_height="60dp"
+                  android:layout_marginLeft="170dp"
+                  android:background="#00ffff"
+                  android:text="SchoolTerm"
+                  app:backgroundTint="#00ffff" />
+
+              <Button
+                  android:id="@+id/btnSchoolLife"
+                  android:layout_width="17dp"
+                  android:layout_height="60dp"
+                  android:layout_marginLeft="310dp"
+                  android:background="#00ffff"
+                  android:text="SchoolLife"
+                  app:backgroundTint="#00ffff" />
+
+          </com.google.android.material.bottomnavigation.BottomNavigationView>
 
           <ImageView
               android:id="@+id/imageView3"

@@ -1,50 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="180dp"
-    android:padding="10dp"
-    android:background="@color/teal_700">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="180dp" android:padding="10dp"
+    android:background="@color/teal_700" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://schemas.android.com/apk/res/android ">
 
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/iconImage"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_centerVertical="true"
-        android:layout_marginEnd="149dp"
-        android:layout_marginRight="149dp"
-        android:src="@drawable/paimeng" />
+    <de.hdodenhof.circleimageview.CircleImageView android:id="@+id/iconImage"
+        android:layout_width="70dp" android:layout_height="70dp"
+        android:layout_alignParentEnd="true" android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" android:layout_marginEnd="149dp"
+        android:layout_marginRight="149dp" android:src="@drawable/paimeng" />
 
-    <TextView
-        android:id="@+id/mailText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="5dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginBottom="-2dp"
-        android:text="HuTao1176514033@qq.com"
-        android:textColor="#FFF"
-        android:textSize="14sp" />
+    <TextView android:id="@+id/mailText" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true" android:layout_alignParentBottom="true"
+        android:layout_marginStart="5dp" android:layout_marginLeft="5dp"
+        android:layout_marginBottom="-2dp" android:text="HuTao1176514033@qq.com"
+        android:textColor="#FFF" android:textSize="14sp" />
 
-    <TextView
-        android:id="@+id/userText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/mailText"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="12dp"
-        android:layout_marginLeft="12dp"
-        android:layout_marginBottom="26dp"
-        android:text="HuTao from GenShen"
-        android:textColor="#FFF"
-        android:textSize="14sp" />
+    <TextView android:id="@+id/userText" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_above="@+id/mailText"
+        android:layout_alignParentStart="true" android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true" android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp" android:layout_marginBottom="26dp"
+        android:text="HuTao from GenShen" android:textColor="#FFF" android:textSize="14sp" />
 
 </RelativeLayout>

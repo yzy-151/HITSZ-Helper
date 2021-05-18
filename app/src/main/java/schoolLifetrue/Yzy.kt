@@ -1,12 +1,16 @@
 package schoolLifetrue
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
+import com.example.myapplication.MainInterface
 import com.example.myapplication.R
 
-class yzy : AppCompatActivity() {
+class Yzy : AppCompatActivity() {
+    var btnReturn:Button?=null//返回键
 
     private val lifeList =ArrayList<Life>()
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,7 +24,11 @@ class yzy : AppCompatActivity() {
         val adapter= LifeAdapterRecycle(lifeList)
         recyclerView?.adapter=adapter//把整好的适配器传给recycler.adapter
 
-
+        btnReturn=findViewById(R.id.btnReturn)
+        btnReturn?.setOnClickListener {
+            val intent= Intent(this,MiddlePage::class.java)
+            startActivity(intent)
+        }
 
 
 

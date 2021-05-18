@@ -5,12 +5,15 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
+import android.widget.Button
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.navigation.NavigationView
 import de.hdodenhof.circleimageview.CircleImageView
+import schoolLifetrue.MiddlePage
+import schoolLifetrue.Yzy
 
 //交互页面，即主界面
 class MainInterface : AppCompatActivity() {
@@ -19,6 +22,9 @@ class MainInterface : AppCompatActivity() {
     var navView:NavigationView?=null//滑动的侧栏布局
     var iconImage:CircleImageView?=null//侧栏的头像部分
     var bottomNavigationMenu:BottomNavigationView?=null//
+    var btnPersonalPage:Button?=null
+    var btnSchoolLife:Button?=null
+    var btnSchoolTerm:Button?=null
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,8 +36,14 @@ class MainInterface : AppCompatActivity() {
         navView=findViewById(R.id.navView)
         iconImage=findViewById(R.id.iconImage)
         bottomNavigationMenu=findViewById(R.id.bottomAppBar2)
+        btnPersonalPage=findViewById(R.id.btnPersonalPage)
+        btnSchoolLife=findViewById(R.id.btnSchoolLife)
+        btnSchoolTerm=findViewById(R.id.btnSchoolTerm)
 
-
+        btnSchoolLife?.setOnClickListener {
+            val intent=Intent(this,MiddlePage::class.java)
+            startActivity(intent)
+        }
 
         iconImage?.setOnClickListener{//点击头像进入第二界面
             val intent=Intent(this, Personalisation::class.java)

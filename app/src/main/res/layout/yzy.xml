@@ -5,10 +5,21 @@
     android:layout_width="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent"
-    tools:context="schoolLifetrue.yzy">
+    tools:context="schoolLifetrue.Yzy">
+    <Button
+        android:id="@+id/btnReturn"
+        android:layout_width="30dp"
+        android:layout_height="60dp"
+        android:textSize="5dp"
+        android:text="返回" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycleView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_marginTop="70dp"
+        android:layout_height="650dp"/>
+
+
+
+
 </androidx.appcompat.widget.LinearLayoutCompat>
