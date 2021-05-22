@@ -25,5 +25,6 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="最新动态">校园动态</string>
     <string name="热门动态">热门动态</string>
+    <string name="title_activity_school_term">SchoolTerm</string>
 
 </resources>

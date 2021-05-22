@@ -9,11 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
-        <activity android:name="schoolLifetrue.MiddlePage"></activity>
+        <activity
+            android:name=".SchoolTerm"
+            android:label="@string/title_activity_school_term"
+            android:theme="@style/Theme.MyApplication.NoActionBar"></activity>
+        <activity android:name="schoolLifetrue.MiddlePage" />
         <activity
             android:name="schoolLifetrue.Yzy"
             android:label="@string/title_activity_yzy"
-            android:theme="@style/Theme.MyApplication.NoActionBar"></activity>
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
         <activity
             android:name="SomethingUseless.Negivation"
             android:label="@string/title_activity_negivation" />
